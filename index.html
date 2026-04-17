@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jasa Pembuatan Website Profesional</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;color:#222;background:#fff}
+
+/* Navbar */
+.navbar{
+position:fixed;top:0;width:100%;background:#fff;
+display:flex;justify-content:space-between;
+padding:15px 40px;z-index:999;
+box-shadow:0 2px 10px rgba(0,0,0,0.05)
+}
+.logo{font-weight:700;color:#0f9d58}
+.navbar a{text-decoration:none;color:#333;margin-left:20px}
+
+/* Hero */
+.hero{
+height:100vh;
+display:flex;align-items:center;justify-content:center;
+text-align:center;
+background:linear-gradient(135deg,#0f9d58,#25d366);
+color:#fff;padding:20px
+}
+.hero h1{font-size:40px;margin-bottom:15px}
+.hero p{font-size:18px;margin-bottom:20px}
+
+.btn{
+background:#fff;color:#0f9d58;
+padding:12px 25px;border-radius:30px;
+text-decoration:none;font-weight:600;
+transition:.3s
+}
+.btn:hover{background:#eee}
+
+/* Section */
+.section{padding:80px 20px;text-align:center}
+.section h2{margin-bottom:20px;font-size:30px}
+
+/* Cards */
+.cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.card{
+background:#fff;
+border-radius:15px;
+padding:25px;
+width:300px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:.3s
+}
+.card:hover{transform:translateY(-10px)}
+.price{font-size:22px;color:#0f9d58;margin:10px 0}
+
+/* CTA */
+.cta{
+background:#0f9d58;
+color:#fff;
+padding:80px 20px;
+text-align:center
+}
+.cta a{
+background:#fff;color:#0f9d58;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600
+}
+
+/* Footer */
+footer{
+text-align:center;
+padding:20px;
+background:#111;color:#fff
+}
+
+/* Animation */
+.fade{opacity:0;transform:translateY(30px);transition:1s}
+.fade.show{opacity:1;transform:translateY(0)}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+<div class="logo">SJA Web</div>
+<div>
+<a href="#paket">Paket</a>
+<a href="#proses">Proses</a>
+<a href="#kontak">Kontak</a>
+</div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+<div>
+<h1>Website Profesional untuk Bisnis Anda</h1>
+<p>Company Profile & Toko Online Siap Pakai</p>
+<p>Gratis Domain & Hosting 1 Tahun</p>
+<a href="https://wa.me/628xxxxxxxxxx" class="btn">Konsultasi Gratis</a>
+</div>
+</section>
+
+<!-- Problem -->
+<section class="section fade">
+<h2>Masih Jualan Tanpa Website?</h2>
+<p>Kurang profesional, sulit dipercaya, dan tidak punya aset digital sendiri.</p>
+</section>
+
+<!-- Paket -->
+<section id="paket" class="section fade">
+<h2>Paket Layanan</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Company Profile</h3>
+<div class="price">Rp 3.500.000</div>
+<p>Website profesional untuk branding bisnis</p>
+</div>
+
+<div class="card">
+<h3>E-Commerce Basic</h3>
+<div class="price">Rp 6.000.000</div>
+<p>Maks 50 produk + checkout manual</p>
+</div>
+
+<div class="card">
+<h3>E-Commerce Advance</h3>
+<div class="price">Rp 7.500.000</div>
+<p>Maks 100 produk + payment gateway</p>
+</div>
+
+</div>
+</section>
+
+<!-- Kenapa -->
+<section class="section fade">
+<h2>Kenapa Pilih Kami?</h2>
+<p>Desain modern, cepat, dan mudah digunakan bahkan untuk pemula.</p>
+</section>
+
+<!-- Proses -->
+<section id="proses" class="section fade">
+<h2>Proses Pengerjaan</h2>
+<p>Konsultasi → Kirim konten → Pembuatan → Revisi → Selesai</p>
+</section>
+
+<!-- CTA -->
+<section id="kontak" class="cta">
+<h2>Siap Punya Website Profesional?</h2>
+<p>Konsultasi GRATIS sekarang</p>
+<br>
+<a href="https://wa.me/628xxxxxxxxxx">Chat WhatsApp</a>
+</section>
+
+<footer>
+<p>© 2026 Jasa Website</p>
+</footer>
+
+<script>
+const fades = document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+fades.forEach(el=>{
+const top = el.getBoundingClientRect().top;
+if(top < window.innerHeight-100){
+el.classList.add('show');
+}
+});
+});
+</script>
+
+</body>
+</html>
